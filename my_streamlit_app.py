@@ -1,19 +1,16 @@
 import streamlit as st
-import pandas as pd
-import folium
 from folium.plugins import MarkerCluster
 from streamlit_folium import st_folium
+from streamlit_option_menu import option_menu
+import pandas as pd
+import folium
 import seaborn as sns
 import matplotlib.pyplot as plt 
 import altair as alt
 import pickle
-
-import streamlit as st
-from streamlit_option_menu import option_menu
 from PIL import Image
+
 st.title('Bienvenue chez _ADN tourisme_ 🗼')
-# new_title = '<p style="font-family:sans-serif  ; font-size: 50px;">Bienvenue, ADN tourisme🗼</p>'
-# st.markdown(new_title, unsafe_allow_html=True)
 
 # data !
 @st.cache   
@@ -214,4 +211,3 @@ frais, de saison dans un décor feutré, en plein cœur du 15ème arrondissement
     result = new_modelLR.predict(new_tfidf .transform(pd.Series(txt)))[0]
     new_title = '<p style="font-family:sans-serif  ; font-size: 20px;">➡️'+result+'</p>'
     st.markdown(new_title, unsafe_allow_html=True)
-  
