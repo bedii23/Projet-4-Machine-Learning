@@ -1,4 +1,4 @@
-pip install streamlit-folium
+
 import streamlit as st
 from folium.plugins import MarkerCluster
 from streamlit_folium import st_folium
