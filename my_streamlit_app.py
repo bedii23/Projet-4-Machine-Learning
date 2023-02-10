@@ -16,7 +16,7 @@ st.title('Bienvenue chez _ADN tourisme_ 🗼')
 @st.cache   
 def get_my_data():    
     # chargement des donnees    
-    data = pd.read_csv('df_grand_est.csv')    
+    data = pd.read_csv('df_Hauts-de-France.csv')    
     return data
 
 def get_my_model():
